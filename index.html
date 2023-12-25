@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fontawesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- AOS library animate on scroll-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- favicons -->
+		<link
+			rel="shortcut icon"
+			href="assets/favicons/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/favicons/site.webmanifest" />
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Eyuel Abiyot | Portfolio</title>
+	</head>
+	<body>
+		<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+		<header class="nav-bar">
+			<div class="container">
+				<nav class="nav">
+					<h4 class="logo"><a href="#">Eyuel</a></h4>
+					<label for="menu-toggle" class="menu-icon">&#9776;</label>
+					<ul class="nav-items">
+						<li class="nav-links"><a href="#home">Home</a></li>
+						<li class="nav-links"><a href="#about">About</a></li>
+						<li class="nav-links"><a href="#projects">Projects</a></li>
+						<li class="nav-links"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="home" class="hero-section">
+			<div class="container">
+				<div class="flex">
+					<div
+						class="hero-title"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+						data-aos-once="true"
+					>
+						<h1>Computer Science Student. 👋</h1>
+						<p>
+							Hi, I'm Eyuel Abiyot. Aspiring Computer Science student based in
+							Adama, Ethiopia.
+						</p>
+						<div class="social">
+							<span class="social-icons">
+								<a href="https://github.com/Eyuleo" target="_blank">
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a href="https://twitter.com/eyucodes" target="_blank">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</span>
+						</div>
+					</div>
+					<img
+						src="assets/COLOR_POP.jpg"
+						alt=""
+						class="hero-img"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+						data-aos-once="true"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="about-section">
+			<div class="container">
+				<div class="flex">
+					<div class="about-img" data-aos="fade-right" data-aos-once="true">
+						<img src="assets/about-img.jpg" alt="" />
+					</div>
+					<div
+						class="about-description"
+						data-aos="fade-left"
+						data-aos-once="true"
+					>
+						<h3>About Me</h3>
+						<p>
+							I'm a 3rd-year Computer Science student. My journey in the world
+							of programming has been nothing short of exhilarating over the
+							past three years. I began my odyssey by mastering the fundamentals
+							of programming using C++, delving into the intricacies of
+							databases,and immersing myself in the world of data structures.
+						</p>
+						<p>
+							Join me on this exciting journey as I weave together my skills and
+							experiences,building a bridge between the tangible and the
+							digital. Let's embark on a transformative exploration of
+							technology,one line of code at a time.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="projects-section">
+			<div class="container">
+				<div class="projects" data-aos="fade-up" data-aos-once="true">
+					<img
+						src="assets/project1.png"
+						alt=""
+						lazy-loading
+						class="project-img"
+					/>
+					<div class="project-description">
+						<h3>Coffee Masters</h3>
+						<p>
+							Checkout page design for Coffee Masters(it exist's in the
+							parrallel universe). Done as part of Introduction to Web
+							Development course on
+							<a href="https://frontendmasters.com/">Frontend Masters</a>
+							built with HTML and CSS.
+						</p>
+						<div class="btns">
+							<a href="https://github.com/Eyuleo/coffee-masters" target="_blank"
+								>Source code <i class="fa-brands fa-github"></i
+							></a>
+							<a
+								href="https://coffee-masters-checkout.vercel.app/"
+								target="_blank"
+								>Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="projects rev-col" data-aos="fade-up" data-aos-once="true">
+					<img
+						src="assets/project2.png"
+						alt=""
+						lazy-loading
+						class="project-img"
+					/>
+					<div class="project-description">
+						<h3>The Odin Project landing page</h3>
+						<p>
+							Simple landing page design with HTML and CSS. I have done it as
+							part of
+							<a href="https://theodinproject.com/">The odin project </a>web dev
+							course that I was taking.
+						</p>
+						<div class="btns">
+							<a
+								href="https://github.com/Eyuleo/odin-landing-page"
+								target="_blank"
+								>Source code <i class="fa-brands fa-github"></i
+							></a>
+							<a href="https://theodinproject.vercel.app/" target="_blank"
+								>Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="projects" data-aos="fade-up" data-aos-once="true">
+					<img
+						src="assets/project3.png"
+						alt=""
+						lazy-loading
+						class="project-img"
+					/>
+					<div class="project-description">
+						<h3>Order Summary Component</h3>
+						<p>
+							Order summary component design from
+							<a href="https://frontendmentor.com">frontend mentor</a> design
+							challenges. Built with HTML and CSS and it's fully responsive.
+						</p>
+						<div class="btns">
+							<a
+								href="https://github.com/Eyuleo/order-summary/tree/main/order-summary-component-main"
+								target="_blank"
+								>Source code <i class="fa-brands fa-github"></i
+							></a>
+							<a href="https://order-fm.netlify.app/" target="_blank"
+								>Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact-section">
+			<div class="container">
+				<div class="message-wrap">
+					<h1>Contact</h1>
+					<form action="mailto:eyuleo10@gmail.com" class="contact-form">
+						<label for="message">Leave your message</label>
+						<textarea
+							name="message"
+							id=""
+							cols="30"
+							rows="10"
+							placeholder="your message"
+							class="message"
+						></textarea>
+						<input type="submit" value="Submit" class="submit-btn" />
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container flex">
+				<p class="current-year"></p>
+				<div class="social-icons">
+					<a href="https://github.com/Eyuleo"
+						><i class="fa-brands fa-github"></i
+					></a>
+				</div>
+			</div>
+		</footer>
+		<!-- //animate on scroll javascript library -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const menuToggle = document.getElementById('menu-toggle')
+				const navItems = document.querySelector('.nav-items')
+				const bodyToggle = document.querySelector('body')
+				menuToggle.addEventListener('change', function () {
+					navItems.classList.toggle('active', this.checked)
+				})
+				bodyToggle.addEventListener('click', function () {
+					if ((navItems.classList.contains = 'active')) {
+						navItems.classList.remove('active')
+					}
+				})
+			})
+			const currentYear = document.querySelector('.current-year')
+			let year = new Date()
+			currentYear.innerHTML = `&copy; ${year.getFullYear()} by Eyuel`
+			AOS.init()
+		</script>
+	</body>
+</html>
