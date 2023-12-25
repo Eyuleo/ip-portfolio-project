@@ -1,7 +1,7 @@
 ##
  <p align="center">This repository contains the source code for Internet programming course portfolio project.</p>
 
- -- Nothing fancy just HTML and CSS.
+ - Nothing fancy just HTML and CSS.
  ### Screenshots
 
  #### Desktop preview
