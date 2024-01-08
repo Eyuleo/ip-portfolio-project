@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.6;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	background-color: #f9f9f9;
+	text-wrap: balance;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 7px;
+    border: 1px solid #0000003f;
+    margin-bottom: 1rem;
+    background-color: #e8f0fe9f;
+}
+input:focus{
+    outline:1px solid #18e6b6;
+}
+label{
+    font-weight: 500;
+}
+.gallery{
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+.gallery-title{
+    font-size: 3rem;
+}
+.gallery-subtitle{
+    color: #000000cb;
+    margin-bottom: 32px;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slide-container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #33333346;
+	box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.slide-container img{
+    display: none;
+    width: 100%;
+}
+img.displaySlide{
+    display: block;
+    animation: slide .5s ease-in-out ;
+    transition: all .4s ease-in-out;
+}
+.slides{
+    overflow: hidden;   
+}
+.slides:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.previousSlide,
+.nextSlide {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    background-color: #000000ab;
+    color: #f9f9f9;
+    transform: translateY(-50%);
+    padding: 5px;
+    border-radius: 4px;
+}
+.previousSlide{
+    margin-left: 4px;
+    left: 0;
+}
+.nextSlide{
+    margin-right: 4px;
+    right: 0;
+}
+.subscribe{
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+.newsLetter-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.newsLetter-subtitle{
+    color: #000000ce;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.news-letter{
+    padding: 30px 20px;
+    border-radius: 7px;
+    border: 1px solid #00000034;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.submit-button{
+    background-color: #000000e1;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: #000000;
+}
+.submit-button:focus{
+    outline: 1px solid #00000034;
+}
+.name-error, .email-error{
+    color: #ff001a;
+    font-weight: 600;
+    font-size: .75rem;
+}
+/* animating the slide to have smooth transition */
+
+@keyframes slide {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -57,6 +57,7 @@
 					<label for="menu-toggle" class="menu-icon">&#9776;</label>
 					<ul class="nav-items">
 						<li class="nav-links"><a href="#home">Home</a></li>
+						<li class="nav-links"><a href="blog.html">Blog</a></li>
 						<li class="nav-links"><a href="#about">About</a></li>
 						<li class="nav-links"><a href="#projects">Projects</a></li>
 						<li class="nav-links"><a href="#contact">Contact</a></li>
@@ -135,7 +136,7 @@
 					<img
 						src="assets/project1.png"
 						alt=""
-						lazy-loading
+						loading="lazy"
 						class="project-img"
 					/>
 					<div class="project-description">
@@ -163,7 +164,7 @@
 					<img
 						src="assets/project2.png"
 						alt=""
-						lazy-loading
+						loading="lazy"
 						class="project-img"
 					/>
 					<div class="project-description">
@@ -218,11 +219,12 @@
 			<div class="container">
 				<div class="message-wrap">
 					<h1>Contact</h1>
-					<form action="mailto:eyuleo10@gmail.com" class="contact-form">
+					<form action="mailto:eyuleo10@gmail.com" class="contact-form" >
 						<label for="message">Leave your message</label>
+						<span id="errorMsg"></span>
 						<textarea
 							name="message"
-							id=""
+							id="userMessage"
 							cols="30"
 							rows="10"
 							placeholder="your message"
@@ -245,24 +247,6 @@
 		</footer>
 		<!-- //animate on scroll javascript library -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const menuToggle = document.getElementById('menu-toggle')
-				const navItems = document.querySelector('.nav-items')
-				const bodyToggle = document.querySelector('body')
-				menuToggle.addEventListener('change', function () {
-					navItems.classList.toggle('active', this.checked)
-				})
-				bodyToggle.addEventListener('click', function () {
-					if ((navItems.classList.contains = 'active')) {
-						navItems.classList.remove('active')
-					}
-				})
-			})
-			const currentYear = document.querySelector('.current-year')
-			let year = new Date()
-			currentYear.innerHTML = `&copy; ${year.getFullYear()} by Eyuel`
-			AOS.init()
-		</script>
+		<script src="app.js"></script>
 	</body>
 </html>
