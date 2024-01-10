@@ -18,18 +18,18 @@ currentYear.innerHTML = `&copy; ${year.getFullYear()} by Eyuel`
 AOS.init()
 
 //validate user message
-const contactForm = document.querySelector(".contact-form")
-const userMessage = document.querySelector("#userMessage")
-let errorMessage = document.querySelector("#errorMsg")
-contactForm.addEventListener("submit", validateForm)
+// const contactForm = document.querySelector(".contact-form")
+// const userMessage = document.querySelector("#userMessage")
+// let errorMessage = document.querySelector("#errorMsg")
+// contactForm.addEventListener("submit", validateForm)
 
-function validateForm(event){
-	event.preventDefault()
-if (!userMessage.value){
-	errorMessage.textContent = `*Message can't be empty`
-	userMessage.focus()
-}else{
-	errorMessage.textContent = ''
-}
-}
+// function validateForm(event){
+// 	event.preventDefault()
+// if (!userMessage.value){
+// 	errorMessage.textContent = `*Message can't be empty`
+// 	userMessage.focus()
+// }else{
+// 	errorMessage.textContent = ''
+// }
+// }
 

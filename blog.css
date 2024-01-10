@@ -1,134 +1,192 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	line-height: 1.6;
-	scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
+
 body {
-	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden;
-	background-color: #f9f9f9;
-	text-wrap: balance;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    text-wrap: balance;
 }
-input{
+
+input,
+textarea {
     display: block;
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px;
     border-radius: 7px;
     border: 1px solid #0000003f;
     margin-bottom: 1rem;
     background-color: #e8f0fe9f;
 }
-input:focus{
-    outline:1px solid #18e6b6;
+
+textarea:focus,
+input:focus {
+    outline: 1px solid #18e6b6;
 }
-label{
+textarea::placeholder, input::placeholder{
+    color: #00000070;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
     font-weight: 500;
 }
-.gallery{
-    padding: 100px 0;
-    background-color: #f9f9f9;
+hr{
+    border: 0;
+    border-bottom: 1px solid #00000034;
+    width: 80%;
+    margin: auto;
 }
-.gallery-title{
+.blog-container{
+    max-width: 1000px;
+    margin: auto;
+}
+.gallery {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.gallery-title {
     font-size: 3rem;
 }
-.gallery-subtitle{
+
+.gallery-subtitle {
     color: #000000cb;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
-.container{
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-.slide-container{
+
+.slide-container {
     position: relative;
     width: 100%;
     margin: auto;
     border: 1px solid #33333346;
-	box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.slide-container img{
+.slide-container img {
     display: none;
     width: 100%;
 }
-img.displaySlide{
+
+img.displaySlide {
     display: block;
-    animation: slide .5s ease-in-out ;
-    transition: all .4s ease-in-out;
+    animation: slide .5s ease-in-out;
 }
-.slides{
-    overflow: hidden;   
-}
-.slides:hover img{
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
 .previousSlide,
 .nextSlide {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.7rem;
     position: absolute;
     top: 50%;
     background-color: #000000ab;
     color: #f9f9f9;
     transform: translateY(-50%);
-    padding: 5px;
-    border-radius: 4px;
+    padding: .1rem 1rem;
+    border: 0;
+    border-radius: 50px;
 }
-.previousSlide{
+
+.previousSlide {
     margin-left: 4px;
     left: 0;
 }
-.nextSlide{
+
+.nextSlide {
     margin-right: 4px;
     right: 0;
 }
-.subscribe{
-    padding: 100px 0;
-    background-color: #ffffff;
+
+.lang-tags{
+    margin-bottom: 20px;
 }
-.newsLetter-title{
+.tags{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.tags:hover{
+    background-color: #18e6b6;
+}
+.resource-items{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.resource-links > a{
+    color: #000000;
+    font-weight: 600;
+    transition: all .2s ease-in;
+}
+.resource-links a:hover{
+    color: #18e6b6;
+}
+.subscribe {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.newsLetter-title {
     text-align: center;
     font-size: 2rem;
 }
-.newsLetter-subtitle{
+
+.newsLetter-subtitle {
     color: #000000ce;
     text-align: center;
     margin-bottom: 32px;
 }
-.news-letter{
+
+.news-letter {
     padding: 30px 20px;
     border-radius: 7px;
     border: 1px solid #00000034;
     max-width: 700px;
     margin: 0 auto;
 }
-.submit-button{
+
+.submit-button {
     background-color: #000000e1;
     color: #f9f9f9;
     text-transform: uppercase;
     cursor: pointer;
 }
-.submit-button:hover{
+
+.submit-button:hover {
     background-color: #000000;
 }
-.submit-button:focus{
+
+.submit-button:focus {
     outline: 1px solid #00000034;
 }
-.name-error, .email-error{
+
+.name-error,
+.email-error {
     color: #ff001a;
     font-weight: 600;
     font-size: .75rem;
 }
+
 /* animating the slide to have smooth transition */
 
 @keyframes slide {
     from {
         opacity: .5;
     }
+
     to {
         opacity: 1;
     }
