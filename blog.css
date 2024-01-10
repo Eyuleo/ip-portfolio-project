@@ -47,6 +47,9 @@ hr{
     max-width: 1000px;
     margin: auto;
 }
+.blog-container p {
+    margin: 15px 0;
+}
 .gallery {
     padding: 100px 0;
     background-color: #ffffff;
