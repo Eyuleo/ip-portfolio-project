@@ -22,6 +22,7 @@ textarea {
     border: 1px solid #0000003f;
     margin-bottom: 1rem;
     background-color: #e8f0fe9f;
+    resize: vertical;
 }
 
 textarea:focus,
